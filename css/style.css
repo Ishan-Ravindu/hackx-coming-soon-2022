@@ -8,8 +8,8 @@ body {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: var(--background-primary);
     /* background-image: url("../assets/background.png");
         background-position: center;
@@ -58,4 +58,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .center-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
