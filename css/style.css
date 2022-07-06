@@ -12,10 +12,10 @@ body {
     height: 100vh;
     background-color: var(--background-primary);
     /* background-image: url("../assets/background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1.0; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1.0; */
 }
 
 h1 {
@@ -24,13 +24,6 @@ h1 {
     font-weight: 700;
     font-size: 60px;
     color: var(--white);
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 p {
@@ -59,4 +52,10 @@ button {
     border: none;
     background-color: var(--gold);
     font-size: larger;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
