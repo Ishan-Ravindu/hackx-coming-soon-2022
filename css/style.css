@@ -22,7 +22,7 @@ h1 {
     font-family: 'Kameron';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 5vw;
     color: var(--white);
 }
 
@@ -30,7 +30,7 @@ p {
     font-family: 'Kameron';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2vw;
     color: var(--white);
 }
 
@@ -58,12 +58,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .center-content {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-}
+/* @media only screen and (max-width: 840px) {
+    
+} */
