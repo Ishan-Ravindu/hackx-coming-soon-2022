@@ -22,7 +22,7 @@ h1 {
     font-family: 'Kameron';
     font-style: normal;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 60px;
     color: var(--white);
 }
 
@@ -30,7 +30,7 @@ p {
     font-family: 'Kameron';
     font-style: normal;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 30px;
     color: var(--white);
 }
 
@@ -61,6 +61,23 @@ button {
     padding: 10px;
 }
 
-/* @media only screen and (max-width: 840px) {
-    
-} */
+@media only screen and (max-width: 640px) {
+    p {
+        font-size: 25px;
+    }
+
+    h1 {
+
+        font-size: 50px;
+
+    }
+
+    .notify-me-containner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
