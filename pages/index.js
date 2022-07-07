@@ -25,6 +25,7 @@ export default function Home() {
           width={383}
           height={476}
           quality={100}
+          priority
         />
       </div>
       <div className={styles.bgWrap}>
@@ -34,6 +35,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           quality={100}
+          priority
         />
       </div>
 
@@ -47,6 +49,7 @@ export default function Home() {
               width={450}
               height={120}
               quality={100}
+              priority
             />
             <Divider orientation="vertical" flexItem />
 
@@ -56,7 +59,9 @@ export default function Home() {
             <CountDown />
           </div>
           <div className={styles.footer} >
-            <div className={styles.comingSoon}><b>COMING</b> SOON !</div>
+            <div className={styles.comingSoon}>
+              <b>COMING</b> SOON !
+            </div>
             <div className={styles.description}>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
           </div>
         </Stack>
