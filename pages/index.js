@@ -3,16 +3,30 @@ import Image from 'next/image'
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 import CountDown from '../components/CountDown'
 import SocialIcon from '../components/socialIcons'
 import styles from '../styles/Home.module.css'
-import background from '../assets/peter-gargiulo-cGNCepznaV8-unsplash.jpg'
-import logo from "../assets/hackX.png"
+import background from '../assets/back2.jpg'
+import logo from "../assets/logoo.png"
+import animal from "../assets/hi stickker.png"
 
 export default function Home() {
   return (
     <>
+
       <SocialIcon />
+      <div className={styles.animalContainer}>
+        <Image
+          className={styles.animalImg}
+          alt="background"
+          src={animal}
+          layout="intrinsic"
+          width={383}
+          height={476}
+          quality={100}
+        />
+      </div>
       <div className={styles.bgWrap}>
         <Image
           alt="background"
@@ -22,30 +36,31 @@ export default function Home() {
           quality={100}
         />
       </div>
+
       <Container maxWidth="lg">
-        <Box sx={{ minHeight: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }} >
-          <Stack className={styles.stack} spacing={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div>
-              <Image
-                alt="background"
-                src={logo}
-                className={styles.image}
-                width={560}
-                height={250}
-                quality={100}
-              />
-            </div>
-            <div style={{ margin: "0" }} className={styles.title}><h2>Inter University Startup Challenge</h2></div>
-            <div>
-              <CountDown />
-            </div>
-            <div className={styles.subTitle} style={{ marginTop: "40px" }}><h1>COMING SOON !</h1></div>
-          </Stack>
-        </Box>
+        <Stack className={styles.stack}>
+          <div className={styles.imgContainer}>
+            <Image
+              alt="background"
+              src={logo}
+              className={styles.image}
+              width={450}
+              height={120}
+              quality={100}
+            />
+            <Divider orientation="vertical" flexItem />
+
+          </div>
+
+          <div>
+            <CountDown />
+          </div>
+          <div className={styles.footer} >
+            <div className={styles.comingSoon}><b>COMING</b> SOON !</div>
+            <div className={styles.description}>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
+          </div>
+        </Stack>
       </Container>
-
-
-
     </>
   )
 }
