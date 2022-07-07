@@ -23,7 +23,7 @@ export default function Home() {
         />
       </div>
       <Container maxWidth="lg">
-        <Box sx={{ height: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }} >
+        <Box sx={{ minHeight: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }} >
           <Stack className={styles.stack} spacing={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div>
               <Image
