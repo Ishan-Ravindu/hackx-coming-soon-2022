@@ -24,11 +24,12 @@ export default function Home() {
       </div>
       <Container maxWidth="lg">
         <Box sx={{ height: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }} >
-          <Stack spacing={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <Stack className={styles.stack} spacing={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div>
               <Image
                 alt="background"
                 src={logo}
+                className={styles.image}
                 width={560}
                 height={250}
                 quality={100}
