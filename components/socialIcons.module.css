@@ -58,6 +58,7 @@
 @media only screen and (max-width: 840px) {
     .social {
         position: relative;
+        z-index: 1;
     }
 
     .social ul {

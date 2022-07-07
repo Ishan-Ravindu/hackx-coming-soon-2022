@@ -1,0 +1,16 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+:root {
+  --gold: #EC9E23;
+  --background-primary: #1E797A;
+  --background-secondary: #004059;
+  --white: white;
+}
