@@ -67,6 +67,7 @@ export default function AppModel() {
             } catch (error) {
                 setLoading(false)
                 setOpen(false)
+                alert.error("Some thing went Wrong")
             }
         }
         setEmail("")
