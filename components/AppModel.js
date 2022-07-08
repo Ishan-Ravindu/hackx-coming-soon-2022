@@ -53,7 +53,7 @@ export default function AppModel() {
         if (isEmail) {
             setLoading(true)
             try {
-                const response = await fetch('http://localhost:3000/api/hello', options);
+                const response = await fetch('https://hackx-coming-soon-2022-82zw1k97d-ishan27596.vercel.app/api/hello', options);
                 setLoading(false)
                 setOpen(false)
                 console.log(response.status)
