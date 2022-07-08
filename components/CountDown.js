@@ -14,8 +14,8 @@ const timerProps = {
 const renderTime = (dimension, time) => {
     return (
         <div>
-            <div className={styles.time}>{time}</div>
-            <div>{dimension}</div>
+            <div className={styles.time} style={{ color: "white" }}>{time}</div>
+            <div style={{ color: "white" }}>{dimension}</div>
         </div>
     );
 };
@@ -39,7 +39,8 @@ function CountDown() {
             <div className={styles.circle}>
                 <CountdownCircleTimer
                     {...timerProps}
-                    colors="#7E2E84"
+                    strokeWidth={1}
+                    colors="#FCB73B"
                     duration={daysDuration}
                     initialRemainingTime={remainingTime}
                 >
@@ -53,7 +54,8 @@ function CountDown() {
             <div className={styles.circle}>
                 <CountdownCircleTimer
                     {...timerProps}
-                    colors="#D14081"
+                    strokeWidth={1}
+                    colors="#ec9e23"
                     duration={daySeconds}
                     initialRemainingTime={remainingTime % daySeconds}
                     onComplete={(totalElapsedTime) => ({
@@ -70,7 +72,8 @@ function CountDown() {
             <div className={styles.circle}>
                 <CountdownCircleTimer
                     {...timerProps}
-                    colors="#EF798A"
+                    strokeWidth={1}
+                    colors="#ec9e23"
                     duration={hourSeconds}
                     initialRemainingTime={remainingTime % hourSeconds}
                     onComplete={(totalElapsedTime) => ({
@@ -87,7 +90,8 @@ function CountDown() {
             <div className={styles.circle}>
                 <CountdownCircleTimer
                     {...timerProps}
-                    colors="#218380"
+                    strokeWidth={1}
+                    colors="#ec9e23"
                     duration={minuteSeconds}
                     initialRemainingTime={remainingTime % minuteSeconds}
                     onComplete={(totalElapsedTime) => ({

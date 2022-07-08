@@ -40,20 +40,19 @@ export default function Home() {
         />
       </div>
 
-      <Container maxWidth="lg">
+      <Container fixed>
         <Stack className={styles.stack}>
-          <div className={styles.imgContainer}>
+          <dv></dv>
+          <div>
             <Image
               alt="background"
               src={logo}
-              className={styles.image}
+              // className={styles.image}
+              layout="intrinsic"
               width={450}
               height={120}
-              quality={100}
               priority
             />
-            <Divider orientation="vertical" flexItem />
-
           </div>
 
           <div>
@@ -65,6 +64,7 @@ export default function Home() {
             </div>
             <div className={styles.description}>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
           </div>
+          <div></div>
         </Stack>
       </Container>
     </>

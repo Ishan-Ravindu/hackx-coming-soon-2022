@@ -19,10 +19,6 @@
     align-items: center;
 }
 
-.imgContainer {
-    margin-top: 40px;
-}
-
 .animalImg:hover {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
@@ -63,29 +59,6 @@
     font-size: 4rem;
     margin-top: 10px;
     margin-bottom: 20px;
-}
-
-.comingSoon {
-    font-size: 4rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    animation: blur 10s ease-out;
-    text-shadow: none;
-}
-
-
-@keyframes blur {
-    from {
-        text-shadow:
-            0px 0px 50px #7B96B8,
-            0px 0px 150px #7B96B8,
-            0px 10px 100px #7B96B8,
-            0px 10px 100px #7B96B8,
-            0px 10px 100px #7B96B8,
-            0px 10px 100px #7B96B8,
-            0px -10px 100px #7B96B8,
-            0px -10px 100px #7B96B8;
-    }
 }
 
 
