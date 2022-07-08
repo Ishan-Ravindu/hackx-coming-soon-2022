@@ -58,7 +58,7 @@ export default function AppModel() {
                 setOpen(false)
                 console.log(response.status)
                 if (response.status == 200) {
-                    alert.success('Oh look, an alert!')
+                    alert.success('Let you know when we open Registration')
 
                 } else {
                     alert.error("Some thing went Wrong")
