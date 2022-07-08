@@ -11,12 +11,16 @@
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.89",
     "@mui/material": "^5.8.7",
-    "api": "^4.5.1",
     "next": "12.2.0",
     "react": "18.2.0",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
     "react-countdown-circle-timer": "^3.0.9",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint": "8.19.0",

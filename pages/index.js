@@ -10,11 +10,12 @@ import styles from '../styles/Home.module.css'
 import background from '../assets/back2.jpg'
 import logo from "../assets/logoo.png"
 import animal from "../assets/hi stickker.png"
+import AppModel from '../components/AppModel';
 
 export default function Home() {
   return (
     <>
-
+      <AppModel />
       <SocialIcon />
       <div className={styles.animalContainer}>
         <Image

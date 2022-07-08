@@ -1,6 +1,3 @@
-const sdk = require('api')('@mailerliteapi/v2#3vxhg2kkw1s00g2');
-
-
 async function postSubscriber(email) {
   const options = {
     method: 'POST',
@@ -21,6 +18,10 @@ async function postSubscriber(email) {
 }
 
 export default async function handler(req, res) {
-  const responce = await postSubscriber(req.body.email)
-  res.status(200).json(responce)
+  const responce = await postSubscriber(JSON.parse(req.body).email)
+  if (responce.error) {
+    res.status(responce.error.code).json(responce)
+  } else {
+    res.status(200).json(responce)
+  }
 }
