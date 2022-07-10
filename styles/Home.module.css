@@ -10,6 +10,19 @@
     position: fixed;
     bottom: -150px;
     left: -100px;
+    z-index: -1;
+}
+
+@media (max-width: 640px) {
+    .animalImg {
+        position: fixed;
+        top: 0px;
+        left: 50%;
+        width: 191.5px;
+        height: 238px;
+        transform: rotate(-37deg);
+
+    }
 }
 
 @media only screen and (max-width:1020px) {
