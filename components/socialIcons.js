@@ -8,7 +8,7 @@ function SocialIcons() {
             <SocialIcon url="https://www.instagram.com/hackx_uok/?hl=en" />
             <SocialIcon url="https://twitter.com/hackx_uok" />
             <SocialIcon url="https://www.youtube.com/c/hackXUoK/" />
-            <SocialIcon onClick={() => console.log("hello")} network='email' />
+            <SocialIcon network='hide' />
         </div>
     );
 }

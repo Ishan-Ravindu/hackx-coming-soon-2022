@@ -12,12 +12,14 @@ import LoadingButton from '@mui/lab/LoadingButton';
 import { useEffect, useState } from 'react';
 import validator from 'validator';
 import { useAlert } from 'react-alert'
+import { SocialIcon } from 'react-social-icons';
 
 export default function AppModel() {
     const [open, setOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [classTag, setClassTag] = useState("")
     const alert = useAlert()
 
     // const [isNewUser, setIsNewUser] = useState(true);
@@ -39,7 +41,11 @@ export default function AppModel() {
     };
 
     const handleClose = () => {
+        setClassTag("animate-bounce")
         setOpen(false);
+        let timer = setTimeout(() => {
+            setClassTag("")
+        }, 0.5 * 1000);
     };
 
     const handleSubscribe = async () => {
@@ -75,10 +81,8 @@ export default function AppModel() {
 
     return (
         <div>
-            <div className={styles.buttonContainer}>
-                <Fab size="large" aria-label="add" onClick={handleClickOpen}>
-                    <EmailRoundedIcon />
-                </Fab>
+            <div className="fixed bottom-0 right-0 m-4 flex space-x-2">
+                <SocialIcon className={`cursor-pointer ${classTag}`} onClick={handleClickOpen} network='email' />
 
             </div>
             <Dialog open={open} onClose={handleClose}>

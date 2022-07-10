@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <img className={`${styles.animalImg}`} src="hi stickker.png" alt="animal" />
       <SocialIcon />
-      {/* <AppModel /> */}
+      <AppModel />
       {/* ----------------------------------------------------------------------------------- */}
 
 
