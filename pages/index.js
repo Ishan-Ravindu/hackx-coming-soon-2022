@@ -17,6 +17,7 @@ import AppModel from '../components/AppModel';
 export default function Home() {
   return (
     <>
+      {/* ----------------------------------------------------------------------------------- */}
       <div className={styles.bgWrap}>
         <Image
           alt="background"
@@ -27,14 +28,18 @@ export default function Home() {
           priority
         />
       </div>
-      <img className={styles.animalImg} src="hi stickker.png" alt="animal" />
-
+      <img className={`${styles.animalImg}`} src="hi stickker.png" alt="animal" />
+      <SocialIcon />
       {/* <AppModel /> */}
+      {/* ----------------------------------------------------------------------------------- */}
+
 
 
       <div className='container mx-auto min-h-screen  grid justify-items-center items-center'>
         <div className="space-y-8 px-4">
-          <img src="logoo.png" width={"100%"} alt="logo" />
+
+          <img className='backdrop-blur' src="logoo.png" width={"100%"} alt="logo" />
+
           <div className={styles.countDownContainer}>
             <CountDown />
           </div>
@@ -42,14 +47,14 @@ export default function Home() {
 
           <div className='text-center'>
             <div className='text-6xl '>
-              <b>COMING</b> SOON !
+              <span className='font-bold'>COMING</span> SOON !
             </div>
-            <div className={styles.description}>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
+            <div className='mt-2 font-bold'>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
           </div>
 
 
         </div>
-        <SocialIcon />
+
       </div >
     </>
   )
