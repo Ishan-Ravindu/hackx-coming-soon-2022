@@ -6,12 +6,30 @@
     z-index: -1;
 }
 
-.animalContainer {
+.animalImg {
     position: fixed;
     bottom: -150px;
     left: -100px;
 }
 
+@media only screen and (max-width:1020px) {
+    .countDownContainer {
+        display: none;
+    }
+}
+
+/* .countDownContainer {
+    @media only screen and (min-width:1900px) {
+        .animalContainer {
+            width: 766px;
+            height: 952px;
+            bottom: -300px;
+            left: -200px;
+        }
+    }
+} */
+
+/* 
 .stack {
     height: 100vh;
     display: flex;
@@ -71,4 +89,4 @@
     .animalContainer {
         display: none;
     }
-}
+} */
