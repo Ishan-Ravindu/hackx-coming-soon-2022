@@ -5,9 +5,6 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import styles from "./AppModel.module.css"
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import Fab from '@mui/material/Fab';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useEffect, useState } from 'react';
 import validator from 'validator';
@@ -21,8 +18,6 @@ export default function AppModel() {
     const [loading, setLoading] = useState(false)
     const [classTag, setClassTag] = useState("")
     const alert = useAlert()
-
-    // const [isNewUser, setIsNewUser] = useState(true);
 
     useEffect(() => {
         let timer = setTimeout(() => {
@@ -105,7 +100,6 @@ export default function AppModel() {
                 </DialogContent>
                 <DialogActions>
                     <Button variant='outlined' color="error" onClick={handleClose}>Cancel</Button>
-                    {/* <Button variant='outlined' color="success" onClick={handleSubscribe}>Subscribe</Button> */}
                     <LoadingButton
                         onClick={handleSubscribe}
                         loading={loading}

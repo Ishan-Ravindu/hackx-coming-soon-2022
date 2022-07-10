@@ -5,11 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      extend: {
-        backgroundImage: {
-          "nature-light": "url('back2.jpg')",
-        },
-      },
+      extend: {},
     },
   },
   plugins: [],

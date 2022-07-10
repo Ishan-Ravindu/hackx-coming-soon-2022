@@ -1,5 +1,3 @@
-import styles from './socialIcons.module.css'
-
 import { SocialIcon } from 'react-social-icons';
 function SocialIcons() {
     return (
