@@ -25,6 +25,22 @@
     }
 }
 
+@media (min-width: 1900px) {
+    .animalImg {
+        width: 574.5;
+        height: 714px;
+        bottom: -200px;
+        left: -150px;
+
+    }
+
+    .subTitleText {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+
+    }
+}
+
 @media only screen and (max-width:1020px) {
     .countDownContainer {
         display: none;

@@ -40,7 +40,7 @@ export default function Home() {
             <div className='text-6xl '>
               <span className='font-bold'>COMING</span> SOON !
             </div>
-            <div className='mt-2 font-bold'>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
+            <div className={`${styles.subTitleText} mt-2 text-base font-bold`}>THE MOST AWAITED INTER - UNIVERSITY STARTUP CHALLENGE</div>
           </div>
 
         </div>
