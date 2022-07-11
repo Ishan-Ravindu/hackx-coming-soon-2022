@@ -77,7 +77,7 @@ export default function AppModel() {
     return (
         <div>
             <div className="fixed bottom-0 right-0 m-4 flex space-x-2">
-                <SocialIcon className={`cursor-pointer ${classTag}`} onClick={handleClickOpen} network='email' />
+                <SocialIcon bgColor='#019AE1' fgColor='white' className={`cursor-pointer ${classTag}`} onClick={handleClickOpen} network='email' />
 
             </div>
             <Dialog open={open} onClose={handleClose}>
