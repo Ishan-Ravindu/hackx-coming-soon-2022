@@ -10,6 +10,9 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/hackX.png" />
+      </Head>
       {/* ----------------------------------------------------------------------------------- */}
       <div className={styles.bgWrap}>
         <Image
