@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <link rel="shortcut icon" href="/hackX.png" />
+        <title>hackX-2022 coming soon</title>
       </Head>
       {/* ----------------------------------------------------------------------------------- */}
       <div className={styles.bgWrap}>
