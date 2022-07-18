@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/hackX.png" />
+        <link rel="shortcut icon" href="/hackX.ico" />
         <title>hackX-2022 coming soon</title>
       </Head>
       {/* ----------------------------------------------------------------------------------- */}
