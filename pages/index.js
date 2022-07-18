@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import SocialIcon from '../components/socialIcons'
 import styles from '../styles/Home.module.css'
-import background from '../public/back2.jpg'
 import AppModel from '../components/AppModel';
 import Head from 'next/head'
 
@@ -16,14 +15,9 @@ export default function Home() {
       </Head>
       {/* ----------------------------------------------------------------------------------- */}
       <div className={styles.bgWrap}>
-        <Image
-          alt="background"
-          src={background}
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-        />
+        <div className='stars'></div>
+        <div className='stars2'></div>
+        <div className='stars3'></div>
       </div>
       <img className={`${styles.animalImg}`} src="hi stickker.png" alt="animal" />
       <SocialIcon />

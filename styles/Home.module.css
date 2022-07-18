@@ -1,9 +1,11 @@
 .bgWrap {
     position: fixed;
+    background-color: #08111A;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    z-index: -1;
+    z-index: -100;
+
 }
 
 .animalImg {
